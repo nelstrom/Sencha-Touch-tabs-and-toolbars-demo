@@ -1,4 +1,4 @@
-There are hundereds of icons bundled with Sencha Touch, but only the following are encoded into the stylesheet:
+There are hundereds of icons bundled with Sencha Touch (check `resources/themes/images/default/pictos`), but only the following are encoded into the stylesheet:
 
 * action
 * add
