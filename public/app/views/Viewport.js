@@ -64,7 +64,8 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
 					iconCls: "locate"
 				},{
 					title: "home",
-					iconCls: "home"
+					iconCls: "home",
+					badgeText: "3"
 				},{
 					title: "bookmarks",
 					iconCls: "bookmarks"
