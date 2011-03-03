@@ -11,23 +11,11 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
     initComponent: function() {
         Ext.apply(this, {
             items: [
-                {
-                    title: "home",
-                    iconCls: "home",
-                    badgeText: "3"
-                },{
-                    title: "search",
-                    iconCls: "search"
-                },{
-                    title: "action",
-                    iconCls: "action"
-                },{
-                    title: "settings",
-                    iconCls: "settings"
-                },{
-                    title: "more",
-                    iconCls: "more"
-                }
+                ToolbarDemo.views.homecard,
+                ToolbarDemo.views.searchcard,
+                ToolbarDemo.views.actioncard,
+                ToolbarDemo.views.settingscard,
+                ToolbarDemo.views.morecard
             ]
         });
         ToolbarDemo.views.Viewport.superclass.initComponent.apply(this, arguments);
