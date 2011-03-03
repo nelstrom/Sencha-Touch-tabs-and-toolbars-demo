@@ -9,17 +9,12 @@ ToolbarDemo.views.Settingscard = Ext.extend(Ext.form.FormPanel, {
         {
             xtype: 'textfield',
             name : 'name',
-            label: 'Name'
+            label: 'Username'
         },
         {
-            xtype: 'numberfield',
-            name : 'age',
-            label: 'Age'
-        },
-        {
-            xtype: 'urlfield',
-            name : 'url',
-            label: 'Website'
+            xtype: 'passwordfield',
+            name : 'password',
+            label: 'Password'
         },
         {
             xtype: 'button',
