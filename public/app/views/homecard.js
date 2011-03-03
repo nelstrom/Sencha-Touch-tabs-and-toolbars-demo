@@ -5,8 +5,15 @@ ToolbarDemo.views.Homecard = Ext.extend(Ext.TabPanel, {
         dock: 'top'
     },
     styleHtmlContent: true,
-    items: [
-        {title: 'one', html: 'one'},
-        {title: 'two', html: 'two'}
-    ]
+    dockedItems: [{
+        xtype: 'toolbar',
+        title: 'Tabs and toolbars'
+    }],
+    items: [{
+        title: 'one',
+        html: 'one'
+    },{
+        title: 'two',
+        html: 'two'
+    }]
 });
