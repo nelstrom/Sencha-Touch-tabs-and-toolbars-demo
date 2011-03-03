@@ -35,4 +35,11 @@ Each of these can be used with the `iconCls` setting, for example:
         iconCls: 'favorites'
     }]
 
+Setting badge text programmatically
+===================================
 
+This works:
+
+    ToolbarDemo.views.viewport.getTabBar().items.items[1].setBadge("1")
+
+But it's a bit of a train crash. There must be a better way.
