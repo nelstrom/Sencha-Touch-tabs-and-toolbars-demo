@@ -16,7 +16,17 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
 			{xtype: 'spacer'},
             {
 				iconMask: true,
+				iconCls: 'home',
+				ui: 'plain'
+			},
+            {
+				iconMask: true,
 				iconCls: 'search',
+				ui: 'plain'
+			},
+            {
+				iconMask: true,
+				iconCls: 'settings',
 				ui: 'plain'
 			},
 			{xtype: 'spacer'},
