@@ -9,8 +9,21 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         dock: 'bottom',
         ui: 'light',
         items: [
-            {text: 'one'},
-            {text: 'two'},
+            {
+				text: 'one',
+				ui: 'back'
+			},
+			{xtype: 'spacer'},
+            {
+				iconMask: true,
+				iconCls: 'search',
+				ui: 'plain'
+			},
+			{xtype: 'spacer'},
+            {
+				text: 'three',
+				ui: 'action'
+			},
         ]
     }],
 });
