@@ -1,13 +1,10 @@
-ToolbarDemo.views.Searchcard = Ext.extend(Ext.form.FormPanel, {
+ToolbarDemo.views.Searchcard = Ext.extend(Ext.Panel, {
     title: "search",
     iconCls: "search",
+    styleHtmlContent: true,
+    html: "placeholder text",
     dockedItems: [{
-        xtype: 'toolbar',
-        title: 'Search'
-    }],
-    items: [{
-        xtype: 'searchfield',
-        name : 'query',
-        label: 'Find'
+        xtype: "toolbar",
+        title: "Search"
     }]
 });

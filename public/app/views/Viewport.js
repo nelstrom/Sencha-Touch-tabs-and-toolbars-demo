@@ -6,11 +6,6 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
             pack: 'center'
         }
     },
-    dock: 'bottom',
-    cardSwitchAnimation: {
-        type: 'fade',
-        duration: 10
-    },
     initComponent: function() {
         Ext.apply(this, {
             items: [
