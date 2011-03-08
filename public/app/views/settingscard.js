@@ -2,6 +2,10 @@ ToolbarDemo.views.Settingscard = Ext.extend(Ext.form.FormPanel, {
     title: "settings",
     iconCls: "settings",
     scroll: "vertical",
+    dockedItems: [{
+        xtype: "toolbar",
+        title: "Settings"
+    }],
     items: [
         {
         xtype: 'fieldset',
