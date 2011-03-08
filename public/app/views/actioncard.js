@@ -53,6 +53,17 @@ ToolbarDemo.views.mixedTextButtons = new Ext.Toolbar({
     ]
 });
 
+ToolbarDemo.views.imageButtons = new Ext.Toolbar({
+    dock: 'bottom',
+    items: [
+        { iconCls: 'star',  iconMask: true },
+        { iconCls: 'star',  iconMask: true,  ui: 'action' },
+        { iconCls: 'star',  iconMask: true,  ui: 'confirm' },
+        { iconCls: 'star',  iconMask: true,  ui: 'decline' },
+        { iconCls: 'star',  iconMask: true,  ui: 'plain' },
+    ]
+});
+
 ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
     title: "action",
     iconCls: "action",
@@ -63,5 +74,6 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         ToolbarDemo.views.textButtonShapes,
         ToolbarDemo.views.textButtonColors,
         ToolbarDemo.views.mixedTextButtons,
+        ToolbarDemo.views.imageButtons
     ]
 });
