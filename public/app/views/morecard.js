@@ -1,22 +1,30 @@
-Ext.regModel('Item', { fields: ['name'] });
-
-ToolbarDemo.morestore = new Ext.data.Store({
-    model: 'Item',
-    data: [
-        { name: "Bookmarks" },
-        { name: "About" }
+Ext.regModel('Item', {
+    fields: [
+        {name: 'text', type: 'string'},
+        {name: 'card'}
     ]
 });
 
-ToolbarDemo.views.morelist = new Ext.List({
-    id: 'morelist',
-    store: ToolbarDemo.morestore,
-    itemTpl: '{name}',
-    listeners: {
-        itemtap: function(view, number, el, obj) {
-            console.log('tapped');
+ToolbarDemo.morestore = new Ext.data.TreeStore({
+    model: 'Item',
+    root: {
+        items: [{
+            text: 'About',
+            card: ToolbarDemo.views.aboutcard,
+            leaf: true
         },
-        scope: this
+        {
+            text: 'Bookmarks',
+            card: ToolbarDemo.views.bookmarkcard,
+            leaf: true
+        }],
+    },
+    proxy: {
+        type: 'ajax',
+        reader: {
+            type: 'tree',
+            root: 'items'
+        }
     }
 });
 
@@ -30,22 +38,19 @@ ToolbarDemo.views.aboutcard = new Ext.Panel({
     html: 'Made from coffee'
 });
 
-ToolbarDemo.views.Morecard = Ext.extend(Ext.Panel, {
+ToolbarDemo.views.Morecard = Ext.extend(Ext.NestedList, {
     title: "more",
     iconCls: "more",
-    layout: 'card',
+    store: ToolbarDemo.morestore,
     cardSwitchAnimation: 'slide',
-    dockedItems: [{
-        xtype: 'toolbar',
-        title: "More"
-    }],
-    items: [
-        {
-            xtype: 'list',
-            id: 'morelist',
-            store: ToolbarDemo.morestore,
-            itemTpl: '<div class="wrapper">{name}</div>',
-            itemSelector: 'div.wrapper'
-        }
-    ]
+    getDetailCard: function(item, parent) {
+        var itemData = item.attributes.record.data,
+        detailCard = new Ext.Panel({
+            scroll: 'vertical',
+            styleHtmlContent: true,
+            tpl: ["<h2>{text}</h2>","{info}"]
+        });
+        detailCard.update(itemData);
+        return detailCard;
+    }
 });
