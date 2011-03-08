@@ -66,11 +66,11 @@
     imageButtons = new Ext.Toolbar({
         dock: 'bottom',
         items: [
-            { iconCls: 'search',  iconMask: true },
-            { iconCls: 'search',  iconMask: true,  ui: 'action' },
-            { iconCls: 'search',  iconMask: true,  ui: 'confirm' },
-            { iconCls: 'search',  iconMask: true,  ui: 'decline' },
-            { iconCls: 'search',  iconMask: true,  ui: 'plain' },
+            { iconCls: 'star',  iconMask: true },
+            { iconCls: 'star',  iconMask: true,  ui: 'action' },
+            { iconCls: 'star',  iconMask: true,  ui: 'confirm' },
+            { iconCls: 'star',  iconMask: true,  ui: 'decline' },
+            { iconCls: 'star',  iconMask: true,  ui: 'plain' },
         ]
     });
 
