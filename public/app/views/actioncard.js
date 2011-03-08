@@ -18,13 +18,9 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
                 text: 'ping',
                 handler: function() {
                     var hometab = ToolbarDemo.views.homecard.tab,
-                        badgenumber = parseInt(hometab.badgeText);
-
-                    if (isNaN(badgenumber)) {
-                        ToolbarDemo.views.homecard.tab.setBadge(1);
-                    } else {
-                        ToolbarDemo.views.homecard.tab.setBadge(badgenumber+1);
-                    };
+                        badgenumber = parseInt(hometab.badgeText)
+                        nextnumber = isNaN(badgenumber) ? 1 : badgenumber+1;
+                    hometab.setBadge(nextnumber);
                 }
             }
         ]
