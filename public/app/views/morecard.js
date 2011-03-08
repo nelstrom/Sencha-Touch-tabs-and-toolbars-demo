@@ -34,13 +34,18 @@ ToolbarDemo.views.Morecard = Ext.extend(Ext.Panel, {
     title: "more",
     iconCls: "more",
     layout: 'card',
+    cardSwitchAnimation: 'slide',
     dockedItems: [{
         xtype: 'toolbar',
         title: "More"
     }],
     items: [
-        ToolbarDemo.views.morelist,
-        ToolbarDemo.views.bookmarkcard,
-        ToolbarDemo.views.aboutcard,
-    ],
+        {
+            xtype: 'list',
+            id: 'morelist',
+            store: ToolbarDemo.morestore,
+            itemTpl: '<div class="wrapper">{name}</div>',
+            itemSelector: 'div.wrapper'
+        }
+    ]
 });
