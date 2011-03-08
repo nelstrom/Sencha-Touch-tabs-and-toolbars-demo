@@ -1,3 +1,13 @@
+ToolbarDemo.views.bookmarkcard = new Ext.Panel({
+    id: 'bookmarkcard',
+    html: 'Your bookmarks here'
+});
+
+ToolbarDemo.views.aboutcard = new Ext.Panel({
+    id: 'aboutcard',
+    html: 'Made from coffee'
+});
+
 Ext.regModel('Item', {
     fields: [
         {name: 'text', type: 'string'},
@@ -28,29 +38,13 @@ ToolbarDemo.morestore = new Ext.data.TreeStore({
     }
 });
 
-ToolbarDemo.views.bookmarkcard = new Ext.Panel({
-    id: 'bookmarkcard',
-    html: 'Your bookmarks here'
-});
-
-ToolbarDemo.views.aboutcard = new Ext.Panel({
-    id: 'aboutcard',
-    html: 'Made from coffee'
-});
-
 ToolbarDemo.views.Morecard = Ext.extend(Ext.NestedList, {
     title: "more",
     iconCls: "more",
     store: ToolbarDemo.morestore,
     cardSwitchAnimation: 'slide',
     getDetailCard: function(item, parent) {
-        var itemData = item.attributes.record.data,
-        detailCard = new Ext.Panel({
-            scroll: 'vertical',
-            styleHtmlContent: true,
-            tpl: ["<h2>{text}</h2>","{info}"]
-        });
-        detailCard.update(itemData);
-        return detailCard;
+        var itemData = item.attributes.record.data;
+        return itemData.card;
     }
 });
