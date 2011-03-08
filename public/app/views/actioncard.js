@@ -2,14 +2,14 @@ ToolbarDemo.views.topbar = new Ext.Toolbar({
     title: "Buttons",
     items: [
         {
-            text: 'clear',
+            iconCls: 'delete',  iconMask: true, ui: "plain",
             handler: function() {
                 ToolbarDemo.views.homecard.tab.setBadge("");
             }
         },
         { xtype: 'spacer' },
         {
-            text: 'ping',
+            iconCls: 'star',  iconMask: true, ui: "plain",
             handler: function() {
                 var hometab = ToolbarDemo.views.homecard.tab,
                     badgenumber = parseInt(hometab.badgeText),
@@ -71,9 +71,9 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
     html: "placeholder text",
     dockedItems: [
         ToolbarDemo.views.topbar,
-        ToolbarDemo.views.textButtonShapes,
-        ToolbarDemo.views.textButtonColors,
-        ToolbarDemo.views.mixedTextButtons,
-        ToolbarDemo.views.imageButtons
+        // ToolbarDemo.views.textButtonShapes,
+        // ToolbarDemo.views.textButtonColors,
+        // ToolbarDemo.views.mixedTextButtons,
+        // ToolbarDemo.views.imageButtons
     ]
 });
