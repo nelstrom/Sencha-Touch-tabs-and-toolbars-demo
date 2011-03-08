@@ -1,13 +1,5 @@
-ToolbarDemo.views.Bookmarkcard = Ext.extend(Ext.Panel, {
-    id: 'bookmarkcard',
-    html: 'Your bookmarks here'
-});
-
-ToolbarDemo.views.Aboutcard = Ext.extend(Ext.Panel, {
-    id: 'aboutcard',
-    html: 'Made from coffee'
-});
-
+// Note: This file must be loaded after the files: 
+// bookmarkcard.js and aboutcard.js
 ToolbarDemo.morestore = new Ext.data.TreeStore({
     model: 'ListItem',
     root: {
