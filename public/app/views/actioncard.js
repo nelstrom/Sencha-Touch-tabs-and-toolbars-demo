@@ -44,8 +44,8 @@
     textButtonColors = new Ext.Toolbar({
         dock: 'bottom',
         items: [
+            { text: 'normal' },
             { text: 'action',   ui: 'action' },
-            { text: 'normal',   ui: 'normal' },
             { text: 'confirm',  ui: 'confirm' },
             { text: 'decline',  ui: 'decline' },
         ]
