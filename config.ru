@@ -1,8 +1,8 @@
 require "rubygems"
 require 'rack/rewrite'
 
-use Rack::Static, :urls => ['/'], :root => "public"
 use Rack::Rewrite do
-  rewrite '/$', '/index.html'
+  rewrite '/', '/index.html'
 end
+use Rack::Static, :urls => ['/'], :root => "public"
 run Rack::Directory.new('public')
