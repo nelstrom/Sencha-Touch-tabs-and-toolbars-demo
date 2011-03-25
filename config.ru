@@ -3,6 +3,6 @@ require 'rack/rewrite'
 
 use Rack::Static, :urls => ['/'], :root => "public"
 use Rack::Rewrite do
-  rewrite '/', '/index.html'
+  rewrite '/$', '/index.html'
 end
 run Rack::Directory.new('public')
