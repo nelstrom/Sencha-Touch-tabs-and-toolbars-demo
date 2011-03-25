@@ -1,5 +1,5 @@
 require "rubygems"
-require 'rack-rewrite'
+require 'rack/rewrite'
 
 use Rack::Static, :urls => ['/','/app','/lib','/stylesheets'], :root => "public"
 use Rack::Rewrite do
