@@ -6,12 +6,12 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
             pack: 'center'
         }
     },
+    defaults: {
+        html: 'placeholder text',
+        styleHtmlContent: true
+    },
     initComponent: function() {
         Ext.apply(this, {
-            defaults: {
-                html: 'placeholder text',
-                styleHtmlContent: true
-            },
             items: [
                 ToolbarDemo.views.homecard,
                 ToolbarDemo.views.searchcard,
