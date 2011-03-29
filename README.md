@@ -1,34 +1,29 @@
+This Git repository includes all of the source code used in creating a tutorial about tabs and toolbars in Sencha Touch.
 
+The tutorial includes several checkpoints:
 
-* action
-* add
-* arrow_down
-* arrow_left
-* arrow_right
-* arrow_up
-* compose
-* delete
-* organize
-* refresh
-* reply
-* search
-* settings
-* star
-* trash
-* maps
-* locate
-* home
-* bookmarks
-* download
-* favorites
-* info
-* more
-* time
-* user
-* team
+* [Blank slate](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/00_blank_slate)
+* [Create user interface using bottom-docked tab bar](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/01_create_bottom_tabs)
+* [Break each card out into it's own file](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/02_make_each_card_a_view)
+* [Specialize the behavior for individual cards](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/03_make_each_card_specialize)
+* [Add a toolbar with title to each card](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/04_add_a_toolbar_to_each_card)
+* [Add 'ping' and 'clear' buttons, which update badge text on home tab button](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/05_add_buttons_to_top_toolbar)
+* [Demonstrate different styles of text buttons](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/06_create_text_buttons)
+* [Demonstrate how to use an icon in a button](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/07_create_icon_buttons)
 
-After checking out this repository, run the following commands to get the snapshots:
+# Using this repository to follow the screencast
 
+First, you'll have to clone this repository:
+
+    git clone git://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo.git
+
+Change into the directory:
+
+    cd Sencha-Touch-tabs-and-toolbars-demo
+
+By default, the git clone command will only create the master branch locally. If you want to study the code at each checkpoint, you will have to fetch each of the other branches. You can do so by running the following:
+
+    git co -b 00_blank_slate origin/00_blank_slate
     git co -b 01_create_bottom_tabs origin/01_create_bottom_tabs
     git co -b 02_make_each_card_a_view origin/02_make_each_card_a_view
     git co -b 03_make_each_card_specialize origin/03_make_each_card_specialize
