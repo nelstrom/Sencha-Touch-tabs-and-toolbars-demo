@@ -8,3 +8,5 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         title: "Buttons"
     }]
 });
+
+Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
