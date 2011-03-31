@@ -26,3 +26,5 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         ]
     }]
 });
+
+Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
