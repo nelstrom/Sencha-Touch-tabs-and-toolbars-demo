@@ -4,3 +4,5 @@ ToolbarDemo.views.Searchcard = Ext.extend(Ext.Panel, {
     styleHtmlContent: true,
     html: "placeholder text"
 });
+
+Ext.reg('searchcard', ToolbarDemo.views.Searchcard);

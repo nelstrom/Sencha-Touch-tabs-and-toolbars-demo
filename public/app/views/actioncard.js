@@ -4,3 +4,5 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
     styleHtmlContent: true,
     html: "placeholder text"
 });
+
+Ext.reg('actioncard', ToolbarDemo.views.Actioncard);

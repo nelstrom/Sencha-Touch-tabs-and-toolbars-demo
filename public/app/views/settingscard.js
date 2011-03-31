@@ -22,3 +22,5 @@ ToolbarDemo.views.Settingscard = Ext.extend(Ext.form.FormPanel, {
         }
     ]
 });
+
+Ext.reg('settingscard', ToolbarDemo.views.Settingscard);
