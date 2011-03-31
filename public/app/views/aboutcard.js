@@ -3,3 +3,5 @@ ToolbarDemo.views.Aboutcard = Ext.extend(Ext.Panel, {
     styleHtmlContent: true,
     html: 'Made from coffee'
 });
+
+Ext.reg('aboutcard', ToolbarDemo.views.Aboutcard);
