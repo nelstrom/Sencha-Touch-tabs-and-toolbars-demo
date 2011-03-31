@@ -6,16 +6,17 @@
             {
                 iconCls: 'delete',  iconMask: true, ui: "plain",
                 handler: function() {
-                    ToolbarDemo.views.homecard.tab.setBadge("");
+                    var home = ToolbarDemo.views.viewport.getComponent('home');
+                    home.tab.setBadge("");
                 }
             },
             { xtype: 'spacer' },
             {
                 iconCls: 'star',  iconMask: true, ui: "plain",
                 handler: function() {
-                    var hometab = ToolbarDemo.views.homecard.tab,
-                    badgenumber = parseInt(hometab.badgeText),
-                    nextnumber = isNaN(badgenumber) ? 1 : badgenumber+1;
+                    var hometab = ToolbarDemo.views.viewport.getComponent('home').tab,
+                        badgenumber = parseInt(hometab.badgeText),
+                        nextnumber = isNaN(badgenumber) ? 1 : badgenumber+1;
                     hometab.setBadge(nextnumber);
                 }
             }
