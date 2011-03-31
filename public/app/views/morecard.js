@@ -8,3 +8,5 @@ ToolbarDemo.views.Morecard = Ext.extend(Ext.NestedList, {
         return new itemData.card;
     }
 });
+
+Ext.reg('morecard', ToolbarDemo.views.Morecard);
