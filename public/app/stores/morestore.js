@@ -1,16 +1,14 @@
-// Note: This file must be loaded after the files: 
-// bookmarkcard.js and aboutcard.js
 ToolbarDemo.morestore = new Ext.data.TreeStore({
     model: 'ListItem',
     root: {
         items: [{
             text: 'About',
-            card: ToolbarDemo.views.Aboutcard,
+            card: {xtype: 'aboutcard'},
             leaf: true
         },
         {
             text: 'Bookmarks',
-            card: ToolbarDemo.views.Bookmarkcard,
+            card: {xtype: 'bookmarkcard'},
             leaf: true
         }],
     },

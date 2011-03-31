@@ -3,3 +3,5 @@ ToolbarDemo.views.Bookmarkcard = Ext.extend(Ext.Panel, {
     styleHtmlContent: true,
     html: 'Your bookmarks here'
 });
+
+Ext.reg('bookmarkcard', ToolbarDemo.views.Bookmarkcard);
