@@ -12,3 +12,5 @@ ToolbarDemo.views.Homecard = Ext.extend(Ext.TabPanel, {
         html: '<p>Toolbars can be used as a title bar or as a container for buttons, or you can mix and match both of these functions.</p>'
     }]
 });
+
+Ext.reg('homecard', ToolbarDemo.views.Homecard);

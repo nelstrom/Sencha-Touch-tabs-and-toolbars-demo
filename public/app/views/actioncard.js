@@ -65,3 +65,5 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         ToolbarDemo.views.mixedTextButtons,
     ]
 });
+
+Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
