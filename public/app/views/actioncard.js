@@ -62,7 +62,7 @@
         xtype: 'toolbar',
         dock: 'bottom',
         items: [
-            { iconCls: 'star',  iconMask: true },
+            { iconCls: 'star',  iconMask: true,  text: 'favorite' },
             { iconCls: 'star',  iconMask: true,  ui: 'action' },
             { iconCls: 'star',  iconMask: true,  ui: 'confirm' },
             { iconCls: 'star',  iconMask: true,  ui: 'decline' },
