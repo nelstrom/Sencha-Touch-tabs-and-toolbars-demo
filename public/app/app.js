@@ -3,5 +3,6 @@ ToolbarDemo = new Ext.Application({
 
     launch: function() {
         this.views.viewport = new this.views.Viewport();
+        this.views.homecard = this.views.viewport.getComponent('home');
     }
 });
