@@ -10,16 +10,14 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
         html: 'placeholder text',
         styleHtmlContent: true
     },
+    items: [
+        { xtype: 'homecard' },
+        { xtype: 'searchcard' },
+        { xtype: 'actioncard' },
+        { xtype: 'settingscard' },
+        { xtype: 'morecard' }
+    ],
     initComponent: function() {
-        Ext.apply(this, {
-            items: [
-                { xtype: 'homecard' },
-                { xtype: 'searchcard' },
-                { xtype: 'actioncard' },
-                { xtype: 'settingscard' },
-                { xtype: 'morecard' }
-            ]
-        });
         ToolbarDemo.views.Viewport.superclass.initComponent.apply(this, arguments);
     }
 });
