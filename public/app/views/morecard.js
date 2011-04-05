@@ -5,6 +5,8 @@ ToolbarDemo.views.Morecard = Ext.extend(Ext.NestedList, {
     cardSwitchAnimation: 'slide',
     getDetailCard: function(item, parent) {
         var itemData = item.attributes.record.data;
-        return new itemData.card;
+        return itemData.card;
     }
 });
+
+Ext.reg('morecard', ToolbarDemo.views.Morecard);

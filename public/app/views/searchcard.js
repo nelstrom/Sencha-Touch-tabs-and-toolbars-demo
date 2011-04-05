@@ -8,3 +8,5 @@ ToolbarDemo.views.Searchcard = Ext.extend(Ext.Panel, {
         title: "Search"
     }]
 });
+
+Ext.reg('searchcard', ToolbarDemo.views.Searchcard);
