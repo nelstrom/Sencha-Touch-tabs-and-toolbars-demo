@@ -16,8 +16,5 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
         { xtype: 'actioncard' },
         { xtype: 'settingscard' },
         { xtype: 'morecard' }
-    ],
-    initComponent: function() {
-        ToolbarDemo.views.Viewport.superclass.initComponent.apply(this, arguments);
-    }
+    ]
 });
