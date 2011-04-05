@@ -32,8 +32,5 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
             title: "More",
             iconCls: "more"
         },
-    ],
-    initComponent: function() {
-        ToolbarDemo.views.Viewport.superclass.initComponent.apply(this, arguments);
-    }
+    ]
 });
