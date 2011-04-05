@@ -1,7 +1,9 @@
 ToolbarDemo.views.Homecard = Ext.extend(Ext.TabPanel, {
     title: "home",
     iconCls: "home",
-    styleHtmlContent: true,
+    defaults: {
+        styleHtmlContent: true
+    },
     items: [{
         title: 'TabPanels',
         scroll: 'vertical',
