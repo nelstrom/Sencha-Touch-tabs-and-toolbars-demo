@@ -10,6 +10,7 @@ The tutorial includes several checkpoints:
 * [Add 'ping' and 'clear' buttons, which update badge text on home tab button](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/05_add_buttons_to_top_toolbar)
 * [Demonstrate different styles of text buttons](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/06_create_text_buttons)
 * [Demonstrate how to use an icon in a button](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/07_create_icon_buttons)
+* [Tidy up](https://github.com/nelstrom/Sencha-Touch-tabs-and-toolbars-demo/tree/08_refactor_complex_types)
 
 # Using this repository to follow the screencast
 
@@ -31,6 +32,7 @@ By default, the git clone command will only create the master branch locally. If
     git co -b 05_add_buttons_to_top_toolbar origin/05_add_buttons_to_top_toolbar
     git co -b 06_create_text_buttons origin/06_create_text_buttons
     git co -b 07_create_icon_buttons origin/07_create_icon_buttons
+    git co -b 08_refactor_complex_types origin/08_refactor_complex_types
 
 ## Live demo
 
