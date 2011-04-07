@@ -75,13 +75,20 @@
         iconCls: "action",
         styleHtmlContent: true,
         html: "placeholder text",
-        dockedItems: [
-            topbar,
-            //textButtonShapes,
-            //textButtonColors,
-            //mixedTextButtons,
-            //imageButtons
-        ]
+
+        initComponent: function() {
+            Ext.apply(this, {
+                dockedItems: [
+                    topbar,
+                    //textButtonShapes,
+                    //textButtonColors,
+                    //mixedTextButtons,
+                    //imageButtons
+                ]
+            });
+
+            ToolbarDemo.views.Actioncard.superclass.initComponent.apply(this, arguments);
+        }
     });
 
     Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
